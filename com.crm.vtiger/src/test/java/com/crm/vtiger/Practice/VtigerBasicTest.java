@@ -46,11 +46,6 @@ public class VtigerBasicTest {
 		driver.findElement(By.name("user_password")).sendKeys(passwordText);
 		driver.findElement(By.id("submitButton")).click();
 		
-		WebElement element = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
-		Actions act = new Actions(driver);
-		act.moveToElement(element).perform();
-		driver.findElement(By.linkText("Sign Out"));
-		driver.close();
 		
 	}
  }
